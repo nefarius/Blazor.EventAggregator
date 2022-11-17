@@ -1,6 +1,6 @@
 # Blazor.EventAggregator
 
-Blazor.EventAggregator is a lightweight Event Aggregator for Blazor. 
+Blazor.EventAggregator is a lightweight Event Aggregator for Blazor.
 
 * 3/2020: Updated to work with .NET Core v3.1.0
 
@@ -8,7 +8,7 @@ Event aggregator is used for indirect component to component communication. In e
 
 [![NuGet](https://img.shields.io/nuget/v/EventAggregator.Blazor.svg)](https://www.nuget.org/packages/EventAggregator.Blazor/)
 
-### Note:
+## Note
 
 Blazor.EventAggregator is completely based on the work done in Caliburn.Micro. The source code was copied from it and then altered to work with Blazor.
 
@@ -17,7 +17,8 @@ Also note that the library has only been tested with the server-side version of 
 ## Getting Started
 
 First register EventAggregator in app’s ConfigureServices:
-```
+
+```cs
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddEventAggregator();
@@ -30,19 +31,20 @@ The rest depends on if you’re using components with code-behinds (inheritance)
 
 To create an event publishing component, first inject IEventAggregator:
 
-```
+```cs
 [Inject]
 private IEventAggregator _eventAggregator { get; set; }
 ```
-		
+
 Then publish the message when something interesting happens:
 
-```
+```cs
 await _eventAggregator.PublishAsync(new CounterIncreasedMessage());
 ```
 
 Here’s a full example of a publisher:
-```
+
+```cs
 public class CounterComponent : ComponentBase
 {
     [Inject]
@@ -61,18 +63,19 @@ public class CounterIncreasedMessage
 {
 }
 ```
-	
+
 ### Creating the subscriber
 
 To create an event subscriber, also start by injecting IEventAggregator:
 
-```
+```cs
 [Inject]
 private IEventAggregator _eventAggregator { get; set; }
 ```
-Then make sure to add and implement the IHandle<TMessageType> interface for all the event’s your component is interested in:
 
-```
+Then make sure to add and implement the `IHandle<TMessageType>` interface for all the event’s your component is interested in:
+
+```cs
 public class CounterListenerComponent : ComponentBase, IHandle<CounterIncreasedMessage>
 ...
 public Task HandleAsync(CounterIncreasedMessage message)
@@ -84,7 +87,7 @@ public Task HandleAsync(CounterIncreasedMessage message)
 
 Here’s full example of a subscriber:
 
-```
+```cs
 public class CounterListenerComponent : ComponentBase, IHandle<CounterIncreasedMessage>
 {
     [Inject]
@@ -109,21 +112,23 @@ public class CounterListenerComponent : ComponentBase, IHandle<CounterIncreasedM
 
 The library can try to automatically call subscriber component's StateHasChanged after it has handled the event. By default this functionality is disabled. You can enable it through options:
 
-```
+```cs
 services.AddEventAggregator(options => options.AutoRefresh = true);
 ```
 
 Auto refresh is based on reflection and it assumes that the subscriber inherits from ComponentBase.
-	
+
 ## Samples
 
 The project site contains a full working sample of the code-behind model in the samples-folder.
 
 ## Requirements
+
 The library has been developed and tested using the following tools:
 
 * .NET Core 3.1
 * Visual Studio 2019
 
 ## Acknowledgements
+
 Work is based on the code available in Caliburn.Micro.
