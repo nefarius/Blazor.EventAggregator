@@ -1,6 +1,6 @@
-﻿using EventAggregator.Blazor;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using System.Threading.Tasks;
+using Nefarius.Blazor.EventAggregator;
 
 namespace CodeBehind.Pages
 {

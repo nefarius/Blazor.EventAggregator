@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nefarius.Blazor.EventAggregator", "Nefarius.Blazor.EventAggregator.csproj", "{C6623EF9-380D-44CF-A495-39461E78C3EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nefarius.Blazor.EventAggregator", "src\Nefarius.Blazor.EventAggregator.csproj", "{C6623EF9-380D-44CF-A495-39461E78C3EF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{E87D2F2C-D4A3-4144-BA7A-000B87A2705D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeBehind", "..\samples\CodeBehind\CodeBehind.csproj", "{AA15D944-29D1-4E8F-9AD1-FCBF087A27E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeBehind", "samples\CodeBehind\CodeBehind.csproj", "{AA15D944-29D1-4E8F-9AD1-FCBF087A27E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
