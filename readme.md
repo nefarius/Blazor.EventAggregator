@@ -2,15 +2,13 @@
 
 Blazor.EventAggregator is a lightweight Event Aggregator for Blazor.
 
-* 3/2020: Updated to work with .NET Core v3.1.0
-
-Event aggregator is used for indirect component to component communication. In event aggregator pattern you have message/event publishers and subscribers. In the case of Blazor, component can publish its events and other component(s) can react to those events. 
+Event aggregator is used for indirect component to component communication. In event aggregator pattern you have message/event publishers and subscribers. In the case of Blazor, component can publish its events and other component(s) can react to those events.
 
 [![NuGet](https://img.shields.io/nuget/v/EventAggregator.Blazor.svg)](https://www.nuget.org/packages/EventAggregator.Blazor/)
 
 ## Note
 
-Blazor.EventAggregator is completely based on the work done in Caliburn.Micro. The source code was copied from it and then altered to work with Blazor.
+Blazor.EventAggregator is completely based on the work done in [Caliburn.Micro](https://caliburnmicro.com/). The source code was copied from it and then altered to work with Blazor.
 
 Also note that the library has only been tested with the server-side version of Blazor. There's no known issues with the WebAssembly-version of Blazor.
 
@@ -126,9 +124,9 @@ The project site contains a full working sample of the code-behind model in the 
 
 The library has been developed and tested using the following tools:
 
-* .NET Core 3.1
-* Visual Studio 2019
+* .NET 7.0
+* Visual Studio 2022
 
 ## Acknowledgements
 
-Work is based on the code available in Caliburn.Micro.
+Work is based on the code available in [Caliburn.Micro](https://caliburnmicro.com/).
