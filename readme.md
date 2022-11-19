@@ -1,4 +1,4 @@
-# Blazor.EventAggregator
+# Nefarius.Blazor.EventAggregator
 
 Blazor.EventAggregator is a lightweight Event Aggregator for Blazor.
 
