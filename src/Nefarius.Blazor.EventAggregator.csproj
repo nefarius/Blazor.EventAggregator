@@ -4,19 +4,23 @@
     <TargetFramework>net7.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Mikael Koskinen</Authors>
+    <Authors>Mikael Koskinen, Benjamin Höglinger-Stelzer</Authors>
     <Company />
     <Description>Lightweight Event Aggregator for Blazor.</Description>
+    <RepositoryUrl>https://github.com/nefarius/Nefarius.Blazor.EventAggregator</RepositoryUrl>
     <PackageProjectUrl>https://github.com/nefarius/Nefarius.Blazor.EventAggregator</PackageProjectUrl>
     <PackageId>Nefarius.Blazor.EventAggregator</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <OutputType>Library</OutputType>
     <IsPackable>true</IsPackable>
     <Version>1.0.0</Version>
+    <OutputPath>$(SolutionDir)bin\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" PrivateAssets="All" />
+    <PackageReference Include="JetBrains.Annotations" Version="2022.3.1">
+        <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.0" />
   </ItemGroup>
 
