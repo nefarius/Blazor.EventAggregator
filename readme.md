@@ -4,7 +4,7 @@ Blazor.EventAggregator is a lightweight Event Aggregator for Blazor.
 
 Event aggregator is used for indirect component to component communication. In event aggregator pattern you have message/event publishers and subscribers. In the case of Blazor, component can publish its events and other component(s) can react to those events.
 
-[![NuGet](https://img.shields.io/nuget/v/EventAggregator.Blazor.svg)](https://www.nuget.org/packages/EventAggregator.Blazor/)
+[![NuGet](https://img.shields.io/nuget/v/Nefarius.Blazor.EventAggregator.svg)](https://www.nuget.org/packages/Nefarius.Blazor.EventAggregator/)
 
 ## Note
 
