@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Mikael Koskinen</Authors>
+    <Company />
+    <Description>Lightweight Event Aggregator for Blazor.</Description>
+    <PackageProjectUrl>https://github.com/mikoskinen/Blazor.EventAggregator</PackageProjectUrl>
+    <PackageId>Nefarius.Blazor.EventAggregator</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <OutputType>Library</OutputType>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>
