@@ -15,11 +15,20 @@
     <IsPackable>true</IsPackable>
     <Version>1.0.0</Version>
     <OutputPath>$(SolutionDir)bin\</OutputPath>
+    <PackageIcon>NSS-128x128.png</PackageIcon>
+    <PackageIconUrl />
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\assets\NSS-128x128.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2022.3.1">
-        <PrivateAssets>all</PrivateAssets>
+      <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.0" />
   </ItemGroup>
