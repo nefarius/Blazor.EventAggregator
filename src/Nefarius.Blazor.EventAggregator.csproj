@@ -12,6 +12,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <OutputType>Library</OutputType>
     <IsPackable>true</IsPackable>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
