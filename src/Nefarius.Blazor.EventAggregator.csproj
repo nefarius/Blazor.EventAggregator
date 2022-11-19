@@ -7,7 +7,7 @@
     <Authors>Mikael Koskinen</Authors>
     <Company />
     <Description>Lightweight Event Aggregator for Blazor.</Description>
-    <PackageProjectUrl>https://github.com/mikoskinen/Blazor.EventAggregator</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/nefarius/Nefarius.Blazor.EventAggregator</PackageProjectUrl>
     <PackageId>Nefarius.Blazor.EventAggregator</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <OutputType>Library</OutputType>
