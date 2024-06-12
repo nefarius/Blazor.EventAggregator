@@ -1,6 +1,4 @@
-<img src="assets/NSS-128x128.png" align="right" />
-
-# Nefarius.Blazor.EventAggregator
+# <img src="assets/NSS-128x128.png" align="left" />Nefarius.Blazor.EventAggregator
 
 Blazor.EventAggregator is a lightweight Event Aggregator for Blazor.
 
