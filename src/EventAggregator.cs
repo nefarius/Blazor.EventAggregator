@@ -19,6 +19,10 @@ public class EventAggregator : IEventAggregator
     private readonly List<Handler> _handlers = new();
     private readonly EventAggregatorOptions _options;
 
+    /// <summary>
+    ///     New instance of <see cref="EventAggregator" />.
+    /// </summary>
+    /// <param name="options">Options for <see cref="EventAggregator" />.</param>
     public EventAggregator(IOptions<EventAggregatorOptions> options)
     {
         _options = options.Value;
@@ -56,6 +60,7 @@ public class EventAggregator : IEventAggregator
         }
     }
 
+    /// <inheritdoc />
     public virtual async Task PublishAsync(object message)
     {
         ArgumentNullException.ThrowIfNull(message);

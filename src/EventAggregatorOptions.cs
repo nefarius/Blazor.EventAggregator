@@ -1,7 +1,13 @@
 ﻿// ReSharper disable once CheckNamespace
 
+using Nefarius.Blazor.EventAggregator;
+// ReSharper disable CheckNamespace
+
 namespace Microsoft.Extensions.DependencyInjection;
 
+/// <summary>
+///     Options for <see cref="EventAggregator"/>.
+/// </summary>
 public class EventAggregatorOptions
 {
     /// <summary>

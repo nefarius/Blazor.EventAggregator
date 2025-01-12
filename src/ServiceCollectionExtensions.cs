@@ -5,10 +5,13 @@ using Nefarius.Blazor.EventAggregator;
 // ReSharper disable once CheckNamespace
 namespace Microsoft.Extensions.DependencyInjection;
 
+/// <summary>
+///     <see cref="IServiceCollection" /> extensions.
+/// </summary>
 public static class ServiceCollectionExtensions
 {
     /// <summary>
-    ///     Adds IEventAggregator as a singleton
+    ///     Adds <see cref="IEventAggregator" /> as a singleton
     /// </summary>
     /// <param name="services">Service collection</param>
     /// <param name="configure">Optional configuration.</param>
