@@ -2,6 +2,8 @@
 
 Namespace: Microsoft.Extensions.DependencyInjection
 
+Options for [EventAggregator](./nefarius.blazor.eventaggregator.eventaggregator.md).
+
 ```csharp
 public class EventAggregatorOptions
 ```

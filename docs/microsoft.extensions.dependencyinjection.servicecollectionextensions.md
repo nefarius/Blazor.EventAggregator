@@ -2,6 +2,8 @@
 
 Namespace: Microsoft.Extensions.DependencyInjection
 
+extensions.
+
 ```csharp
 public static class ServiceCollectionExtensions
 ```
@@ -12,7 +14,7 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) 
 
 ### <a id="methods-addeventaggregator"/>**AddEventAggregator(IServiceCollection, Action&lt;EventAggregatorOptions&gt;)**
 
-Adds IEventAggregator as a singleton
+Adds [IEventAggregator](./nefarius.blazor.eventaggregator.ieventaggregator.md) as a singleton
 
 ```csharp
 public static IServiceCollection AddEventAggregator(IServiceCollection services, Action<EventAggregatorOptions> configure)
