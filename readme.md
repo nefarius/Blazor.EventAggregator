@@ -134,7 +134,7 @@ The project site contains a full working sample of the code-behind model in the 
 
 The library has been developed and tested using the following tools:
 
-* .NET 7.0
+* .NET 7.0, 8.0 and 9.0
 * Visual Studio 2022
 
 ## Acknowledgements
