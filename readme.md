@@ -1,6 +1,9 @@
 # <img src="assets/NSS-128x128.png" align="left" />Nefarius.Blazor.EventAggregator
 
-[![NuGet](https://img.shields.io/nuget/v/Nefarius.Blazor.EventAggregator.svg)](https://www.nuget.org/packages/Nefarius.Blazor.EventAggregator/)
+[![.NET](https://github.com/nefarius/Nefarius.Blazor.EventAggregator/actions/workflows/build.yml/badge.svg)](https://github.com/nefarius/Nefarius.Blazor.EventAggregator/actions/workflows/build.yml)
+![Requirements](https://img.shields.io/badge/Requires-.NET%207%2F8%2F9-blue.svg)
+[![NuGet Version](https://img.shields.io/nuget/v/Nefarius.Blazor.EventAggregator)](https://www.nuget.org/packages/Nefarius.Blazor.EventAggregator/)
+[![NuGet](https://img.shields.io/nuget/dt/Nefarius.Blazor.EventAggregator)](https://www.nuget.org/packages/Nefarius.Blazor.EventAggregator/)
 
 Blazor.EventAggregator is a lightweight Event Aggregator for Blazor.
 
