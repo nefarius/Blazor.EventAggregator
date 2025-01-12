@@ -1,16 +1,20 @@
 # <img src="assets/NSS-128x128.png" align="left" />Nefarius.Blazor.EventAggregator
 
-Blazor.EventAggregator is a lightweight Event Aggregator for Blazor.
-
 [![NuGet](https://img.shields.io/nuget/v/Nefarius.Blazor.EventAggregator.svg)](https://www.nuget.org/packages/Nefarius.Blazor.EventAggregator/)
 
-Event aggregator is used for indirect component to component communication. In event aggregator pattern you have message/event publishers and subscribers. In the case of Blazor, component can publish its events and other component(s) can react to those events.
+Blazor.EventAggregator is a lightweight Event Aggregator for Blazor.
+
+Event aggregator is used for indirect component to component communication. In event aggregator pattern you have
+message/event publishers and subscribers. In the case of Blazor, component can publish its events and other component(s)
+can react to those events.
 
 ## Note
 
-Blazor.EventAggregator is completely based on the work done in [Caliburn.Micro](https://caliburnmicro.com/). The source code was copied from it and then altered to work with Blazor.
+Blazor.EventAggregator is completely based on the work done in [Caliburn.Micro](https://caliburnmicro.com/). The source
+code was copied from it and then altered to work with Blazor.
 
-Also note that the library has only been tested with the server-side version of Blazor. There's no known issues with the WebAssembly-version of Blazor.
+Also note that the library has only been tested with the server-side version of Blazor. There's no known issues with the
+WebAssembly-version of Blazor.
 
 ## Getting Started
 
@@ -23,7 +27,8 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-The rest depends on if you’re using components with code-behinds (inheritance) or without inheritance. The following guidance is for code-behind scenarios.
+The rest depends on if you’re using components with code-behinds (inheritance) or without inheritance. The following
+guidance is for code-behind scenarios.
 
 ### Creating the publisher
 
@@ -71,7 +76,8 @@ To create an event subscriber, also start by injecting IEventAggregator:
 private IEventAggregator _eventAggregator { get; set; }
 ```
 
-Then make sure to add and implement the `IHandle<TMessageType>` interface for all the event’s your component is interested in:
+Then make sure to add and implement the `IHandle<TMessageType>` interface for all the event’s your component is
+interested in:
 
 ```cs
 public class CounterListenerComponent : ComponentBase, IHandle<CounterIncreasedMessage>
@@ -108,7 +114,8 @@ public class CounterListenerComponent : ComponentBase, IHandle<CounterIncreasedM
 
 ## Note about auto refresh
 
-The library can try to automatically call subscriber component's StateHasChanged after it has handled the event. By default this functionality is disabled. You can enable it through options:
+The library can try to automatically call subscriber component's StateHasChanged after it has handled the event. By
+default this functionality is disabled. You can enable it through options:
 
 ```cs
 services.AddEventAggregator(options => options.AutoRefresh = true);
