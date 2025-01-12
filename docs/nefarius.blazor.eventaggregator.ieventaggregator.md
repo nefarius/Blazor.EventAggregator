@@ -2,6 +2,8 @@
 
 Namespace: Nefarius.Blazor.EventAggregator
 
+Event aggregator service instance.
+
 ```csharp
 public interface IEventAggregator
 ```

@@ -13,6 +13,8 @@ Implements [IEventAggregator](./nefarius.blazor.eventaggregator.ieventaggregator
 
 ### <a id="constructors-.ctor"/>**EventAggregator(IOptions&lt;EventAggregatorOptions&gt;)**
 
+New instance of [EventAggregator](./nefarius.blazor.eventaggregator.eventaggregator.md).
+
 ```csharp
 public EventAggregator(IOptions<EventAggregatorOptions> options)
 ```
@@ -20,6 +22,7 @@ public EventAggregator(IOptions<EventAggregatorOptions> options)
 #### Parameters
 
 `options` IOptions&lt;EventAggregatorOptions&gt;<br>
+Options for [EventAggregator](./nefarius.blazor.eventaggregator.eventaggregator.md).
 
 ## Methods
 
