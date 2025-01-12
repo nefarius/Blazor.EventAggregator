@@ -3,7 +3,6 @@
     <PropertyGroup>
         <TargetFrameworks>net7.0;net8.0;net9.0</TargetFrameworks>
         <LangVersion>latest</LangVersion>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Authors>Mikael Koskinen, Benjamin Höglinger-Stelzer</Authors>
         <Company/>
         <Description>Lightweight Event Aggregator for Blazor.</Description>
@@ -14,9 +13,6 @@
         <OutputType>Library</OutputType>
         <IsPackable>true</IsPackable>
         <Version>1.0.0</Version>
-        <OutputPath>$(SolutionDir)bin\</OutputPath>
-        <PackageIcon>NSS-128x128.png</PackageIcon>
-        <PackageIconUrl/>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -24,18 +20,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="..\assets\NSS-128x128.png">
-            <Pack>True</Pack>
-            <PackagePath></PackagePath>
-        </None>
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.20" Condition="'$(TargetFramework)' == 'net7.0'"/>
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.11" Condition="'$(TargetFramework)' == 'net8.0'"/>
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.0" Condition="'$(TargetFramework)' == 'net9.0'"/>
     </ItemGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.20" Condition="'$(TargetFramework)' == 'net7.0'" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.11" Condition="'$(TargetFramework)' == 'net8.0'" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.0" Condition="'$(TargetFramework)' == 'net9.0'" />
-    </ItemGroup>
-    
     <ItemGroup>
         <PackageReference Include="MinVer" Version="6.0.0">
             <PrivateAssets>all</PrivateAssets>
