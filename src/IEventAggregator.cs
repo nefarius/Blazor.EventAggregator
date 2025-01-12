@@ -1,7 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
 
 namespace Nefarius.Blazor.EventAggregator;
 
+[SuppressMessage("ReSharper", "UnusedMember.Global")]
 public interface IEventAggregator
 {
 	/// <summary>

@@ -1,36 +1,46 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Mikael Koskinen, Benjamin Höglinger-Stelzer</Authors>
-    <Company />
-    <Description>Lightweight Event Aggregator for Blazor.</Description>
-    <RepositoryUrl>https://github.com/nefarius/Nefarius.Blazor.EventAggregator</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/nefarius/Nefarius.Blazor.EventAggregator</PackageProjectUrl>
-    <PackageId>Nefarius.Blazor.EventAggregator</PackageId>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <OutputType>Library</OutputType>
-    <IsPackable>true</IsPackable>
-    <Version>1.0.0</Version>
-    <OutputPath>$(SolutionDir)bin\</OutputPath>
-    <PackageIcon>NSS-128x128.png</PackageIcon>
-    <PackageIconUrl />
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net7.0;net8.0;net9.0</TargetFrameworks>
+        <LangVersion>latest</LangVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Mikael Koskinen, Benjamin Höglinger-Stelzer</Authors>
+        <Company/>
+        <Description>Lightweight Event Aggregator for Blazor.</Description>
+        <RepositoryUrl>https://github.com/nefarius/Nefarius.Blazor.EventAggregator</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/nefarius/Nefarius.Blazor.EventAggregator</PackageProjectUrl>
+        <PackageId>Nefarius.Blazor.EventAggregator</PackageId>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <OutputType>Library</OutputType>
+        <IsPackable>true</IsPackable>
+        <Version>1.0.0</Version>
+        <OutputPath>$(SolutionDir)bin\</OutputPath>
+        <PackageIcon>NSS-128x128.png</PackageIcon>
+        <PackageIconUrl/>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\assets\NSS-128x128.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
+    <PropertyGroup>
+        <MinVerTagPrefix>v</MinVerTagPrefix>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="2022.3.1">
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.0" />
-  </ItemGroup>
+    <ItemGroup>
+        <None Include="..\assets\NSS-128x128.png">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.20" Condition="'$(TargetFramework)' == 'net7.0'" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.11" Condition="'$(TargetFramework)' == 'net8.0'" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.0" Condition="'$(TargetFramework)' == 'net9.0'" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="MinVer" Version="6.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
 
 </Project>

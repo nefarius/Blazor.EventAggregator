@@ -9,6 +9,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{E87D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeBehind", "samples\CodeBehind\CodeBehind.csproj", "{AA15D944-29D1-4E8F-9AD1-FCBF087A27E2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E9BBB2B4-D606-45BB-9E4B-8E61044BC5B3}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+		.github\workflows\build.yml = .github\workflows\build.yml
+		.github\workflows\generate-docs.yml = .github\workflows\generate-docs.yml
+		.github\workflows\publish-to-nuget.yml = .github\workflows\publish-to-nuget.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
