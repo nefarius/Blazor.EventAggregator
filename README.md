@@ -7,9 +7,10 @@
 
 Lightweight Event Aggregator for Blazor.
 
-Event aggregator is used for indirect component to component communication. In event aggregator pattern you have
-message/event publishers and subscribers. In the case of Blazor, component can publish its events and other component(s)
-can react to those events.
+Event aggregator is used for indirect component-to-component communication.
+In event aggregator pattern, you have message/event publishers and subscribers.
+In the case of Blazor, a component can publish its events and other component(
+s) can react to those events.
 
 ## Note
 
